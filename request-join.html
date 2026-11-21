@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request to Join an Activity | ATLAS</title>
+  <link rel="icon" href="images/atlas-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <img src="images/atlas-logo.svg" alt="ATLAS logo: a globe with a compass needle">
+      <a class="brand" href="index.html">ATLAS<small>History &amp; Culture Club</small></a>
+    </header>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="manager-dashboard.html">Club Manager Dashboard</a>
+      <a href="member-dashboard.html" aria-current="page">Club Member Dashboard</a>
+      <a href="club-offerings.html">Club Offerings</a>
+      <a href="about-us.html">About Us</a>
+    </nav>
+    <nav class="breadcrumb">
+      Home / <a href="member-dashboard.html">Club Member Dashboard</a> / Request to Join
+    </nav>
+    <main>
+      <h1>Request to Join an Activity</h1>
+      <p class="lede">Choose an experience and a date that suits you. All fields are required.</p>
+      <hr class="page-title-rule">
+      <form id="request-form" class="atlas-form" action="#" method="post">
+        <div class="field">
+          <label for="activity">Select Activity</label>
+          <select id="activity" name="activity" required>
+            <option value="" selected>Choose an activity&hellip;</option>
+            <!-- Offerings are added here by member-phase3.js (club offerings + manager offerings) -->
+          </select>
+        </div>
+        <div class="field">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full_name" placeholder="e.g. Sara Fahad" required maxlength="60" autocomplete="name">
+          <p class="hint">Your full name: letters and spaces only, no numbers or special characters.</p>
+        </div>
+        <div class="field">
+          <label for="preferred-date">Preferred Date</label>
+          <input type="date" id="preferred-date" name="preferred_date" required>
+          <p class="hint">Pick a date in the future.</p>
+        </div>
+        <input type="button" class="btn" id="submit-button" value="Submit">
+      </form>
+
+      <section id="session-requests" style="display: none">
+        <h2>Requests Made in This Session</h2>
+        <table class="data-table">
+          <caption>Requests you have submitted since opening this page</caption>
+          <thead>
+            <tr><th scope="col">Offering Name</th><th scope="col">Full Name</th><th scope="col">Preferred Date</th><th scope="col">Cost</th><th scope="col">Status</th></tr>
+          </thead>
+          <tbody id="session-requests-body"></tbody>
+        </table>
+        <p class="hint">These requests are temporary. They are cleared when you go back to the Dashboard.</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      &copy; ATLAS Club 2026 &nbsp;|&nbsp; Contact: <a href="mailto:hello@atlasclub.org">hello@atlasclub.org</a> &nbsp;|&nbsp; Follow us: @atlasclub
+    </footer>
+  </div>
+  <script src="js/request-join.js"></script>
+</body>
+</html>

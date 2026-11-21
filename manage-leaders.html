@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manage Activity Leaders and Instructors | ATLAS History &amp; Culture Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <img src="images/atlas-logo.svg" alt="ATLAS compass and globe logo">
+      <a class="brand" href="index.html">ATLAS<small>History &amp; Culture Club</small></a>
+    </header>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="manager-dashboard.html" aria-current="page">Club Manager Dashboard</a>
+      <a href="member-dashboard.html">Club Member Dashboard</a>
+      <a href="club-offerings.html">Club Offerings</a>
+      <a href="about-us.html">About Us</a>
+    </nav>
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a> / <a href="manager-dashboard.html">Club Manager Dashboard</a> / Manage Leaders and Instructors
+    </nav>
+    <main>
+      <h1>Manage Activity Leaders and Instructors</h1>
+      <p class="lede">Keep the club team up to date.</p>
+      <hr class="page-title-rule">
+
+      <section>
+        <h2>Current Team</h2>
+        <form id="delete-leaders-form" class="atlas-form" action="#" method="post">
+          <ul id="team-list" class="team-list">
+            <li>
+              <img src="images/leader-1.svg" alt="Photo of Dr. Layla Haddad">
+              <span class="member-info">Dr. Layla Haddad<span>Mesopotamia</span></span>
+              <label><input type="checkbox" name="delete_leader" value="leader-1"> Select</label>
+            </li>
+            <li>
+              <img src="images/leader-2.svg" alt="Photo of Rania Mansour">
+              <span class="member-info">Rania Mansour<span>Ancient Egypt</span></span>
+              <label><input type="checkbox" name="delete_leader" value="leader-2"> Select</label>
+            </li>
+            <li>
+              <img src="images/leader-3.svg" alt="Photo of Khalid Al-Shehri">
+              <span class="member-info">Khalid Al-Shehri<span>Ancient Arabia</span></span>
+              <label><input type="checkbox" name="delete_leader" value="leader-3"> Select</label>
+            </li>
+            <li>
+              <img src="images/leader-4.svg" alt="Photo of Dr. Yasmin Farahani">
+              <span class="member-info">Dr. Yasmin Farahani<span>Persia</span></span>
+              <label><input type="checkbox" name="delete_leader" value="leader-4"> Select</label>
+            </li>
+            <li>
+              <img src="images/leader-5.svg" alt="Photo of Tariq Al-Ghamdi">
+              <span class="member-info">Tariq Al-Ghamdi<span>Islamic Golden Age</span></span>
+              <label><input type="checkbox" name="delete_leader" value="leader-5"> Select</label>
+            </li>
+            <li>
+              <img src="images/leader-6.svg" alt="Photo of Mei Lin Zhao">
+              <span class="member-info">Mei Lin Zhao<span>Silk Road</span></span>
+              <label><input type="checkbox" name="delete_leader" value="leader-6"> Select</label>
+            </li>
+          </ul>
+          <input type="button" class="btn btn-delete" id="delete-button" value="Delete Selected">
+        </form>
+      </section>
+
+      <section>
+        <h2>Add New Activity Leader or Instructor</h2>
+        <form id="add-leader-form" class="atlas-form" action="#" method="post" enctype="multipart/form-data" novalidate>
+          <div class="field">
+            <label for="leader-name">Name</label>
+            <input type="text" id="leader-name" name="leader_name" placeholder="e.g. Dr. Samira Nasser" required>
+          </div>
+
+          <div class="field">
+            <label for="leader-photo">Photo</label>
+            <input type="file" id="leader-photo" name="leader_photo" accept="image/*" required>
+          </div>
+
+          <div class="field-row">
+          <div class="field">
+            <label for="leader-dob">Date of Birth</label>
+            <input type="date" id="leader-dob" name="leader_dob" required>
+          </div>
+
+          <div class="field">
+            <label for="leader-email">Email</label>
+            <input type="email" id="leader-email" name="leader_email" placeholder="name@atlasclub.org" required>
+          </div>
+          </div>
+
+          <div class="field">
+            <label for="leader-expertise">Area of Expertise</label>
+            <input type="text" id="leader-expertise" name="leader_expertise" placeholder="e.g. Ancient Arabian Trade Routes" required>
+          </div>
+
+          <div class="field">
+            <label for="leader-skills">Skills</label>
+            <input type="text" id="leader-skills" name="leader_skills" placeholder="e.g. Public speaking, artifact handling" required>
+          </div>
+
+          <div class="field">
+            <label for="leader-education">Education</label>
+            <input type="text" id="leader-education" name="leader_education" placeholder="e.g. PhD in Near Eastern Archaeology" required>
+          </div>
+
+          <input type="button" class="btn" id="add-leader-button" value="Add">
+        </form>
+      </section>
+    </main>
+    <script src="js/manager-phase3.js"></script>
+    <footer class="site-footer">&copy; ATLAS Club 2026 &nbsp;|&nbsp; Contact: <a href="mailto:hello@atlasclub.org">hello@atlasclub.org</a> &nbsp;|&nbsp; Follow us: @atlasclub</footer>
+  </div>
+</body>
+</html>

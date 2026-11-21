@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Club Offerings | ATLAS History &amp; Culture Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <img src="images/atlas-logo.svg" alt="ATLAS compass and globe logo">
+      <a class="brand" href="index.html">ATLAS<small>History &amp; Culture Club</small></a>
+    </header>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="manager-dashboard.html">Club Manager Dashboard</a>
+      <a href="member-dashboard.html">Club Member Dashboard</a>
+      <a href="club-offerings.html" aria-current="page">Club Offerings</a>
+      <a href="about-us.html">About Us</a>
+    </nav>
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a> / Club Offerings
+    </nav>
+    <main>
+      <h1>Club Offerings</h1>
+      <p class="lede">Every experience this term, one civilization at a time.</p>
+      <hr class="page-title-rule">
+
+      <form class="atlas-form sort-form" action="#" method="get">
+        <label for="sort">Sort by</label>
+        <select id="sort" name="sort">
+          <optgroup label="Price">
+            <option value="price-asc">Low to High</option>
+            <option value="price-desc">High to Low</option>
+          </optgroup>
+          <optgroup label="Name">
+            <option value="name-asc">A–Z</option>
+            <option value="name-desc">Z–A</option>
+          </optgroup>
+        </select>
+        <input type="button" class="btn" id="sort-button" value="Sort">
+      </form>
+
+      <div class="home-offerings">
+        <article class="offering-card">
+          <img src="images/clay-tablet.svg" alt="Clay tablet with cuneiform marks">
+          <p class="home-eyebrow">MESOPOTAMIA</p>
+          <h3>The First Story</h3>
+          <p>Learn how writing began, then press your own message into a clay tablet using early cuneiform marks.</p>
+          <p><strong>Price: 0 SAR (Free)</strong></p>
+        </article>
+
+        <article class="offering-card">
+          <img src="images/nile-symbols.svg" alt="Egyptian symbols along the Nile">
+          <p class="home-eyebrow">ANCIENT EGYPT</p>
+          <h3>Fables of the Nile</h3>
+          <p>Match deities to their symbols, then design a small personal emblem inspired by Egyptian mythology.</p>
+          <p><strong>Price: 30 SAR</strong></p>
+        </article>
+
+        <article class="offering-card">
+          <img src="images/heros-path.svg" alt="Ancient pathway and rising sun illustration">
+          <p class="home-eyebrow">WORLD CULTURES</p>
+          <h3>The Hero's Path</h3>
+          <p>Explore legendary journeys and the meaning of heroes across cultures.</p>
+          <p><strong>Price: 30 SAR</strong></p>
+        </article>
+
+        <article class="offering-card">
+          <img src="images/desert-route.svg" alt="Desert caravan route">
+          <p class="home-eyebrow">ANCIENT ARABIA</p>
+          <h3>Stories of the Desert</h3>
+          <p>Pass a short tale person to person, then compare the ending to the original: oral tradition, live.</p>
+          <p><strong>Price: 0 SAR (Free)</strong></p>
+        </article>
+
+        <article class="offering-card">
+          <img src="images/persian-garden.svg" alt="Persian garden pattern">
+          <p class="home-eyebrow">PERSIA</p>
+          <h3>Gardens of Persia</h3>
+          <p>Explore the idea of the paradise garden, then sketch a tile pattern of your own.</p>
+          <p><strong>Price: 40 SAR</strong></p>
+        </article>
+
+        <article class="offering-card">
+          <img src="images/golden-age.svg" alt="Astrolabe from the Islamic Golden Age">
+          <p class="home-eyebrow">ISLAMIC GOLDEN AGE</p>
+          <h3>Minds of the House of Wisdom</h3>
+          <p>Meet the scholars of Baghdad and build a paper astrolabe to find the time by the stars.</p>
+          <p><strong>Price: 50 SAR</strong></p>
+        </article>
+
+        <article class="offering-card">
+          <img src="images/silk-road.svg" alt="Silk Road trading caravan">
+          <p class="home-eyebrow">SILK ROAD</p>
+          <h3>Trade Along the Silk Road</h3>
+          <p>Trade goods between stations in a live game and see how ideas travelled with them.</p>
+          <p><strong>Price: 25 SAR</strong></p>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer">&copy; ATLAS Club 2026 &nbsp;|&nbsp; Contact: <a href="mailto:hello@atlasclub.org">hello@atlasclub.org</a> &nbsp;|&nbsp; Follow us: @atlasclub</footer>
+  </div>
+  <script src="js/club-offerings.js"></script>
+</body>
+</html>

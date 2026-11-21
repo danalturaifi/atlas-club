@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | ATLAS History &amp; Culture Club</title>
+  <link rel="icon" href="images/atlas-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page" id="top">
+    <header class="site-header">
+      <img src="images/atlas-logo.svg" alt="ATLAS compass and globe logo">
+      <a class="brand" href="index.html">ATLAS<small>History &amp; Culture Club</small></a>
+      <div class="header-tools">
+        <button type="button" class="nav-toggle" id="nav-toggle">&#9776; Menu</button>
+        <button type="button" class="theme-toggle" id="theme-toggle">Dark mode</button>
+      </div>
+    </header>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="manager-dashboard.html">Club Manager Dashboard</a>
+      <a href="member-dashboard.html">Club Member Dashboard</a>
+      <a href="club-offerings.html">Club Offerings</a>
+      <a href="about-us.html">About Us</a>
+    </nav>
+    <main>
+      <section class="home-hero" aria-labelledby="hero-title">
+        <div>
+          <p class="home-eyebrow">LEARN · EXPERIENCE · CONNECT</p>
+          <h1 id="hero-title">Explore the stories that shaped humanity.</h1>
+          <p class="lede">ATLAS turns history and culture into lived experiences. Discover civilizations through hands-on activities, shared stories, and meaningful cultural connections.</p>
+          <a class="home-button" href="club-offerings.html">See this term's offerings</a>
+          <a class="home-button" href="request-join.html">Request to join an activity</a>
+        </div>
+        <div class="hero-mark"><img src="images/atlas-logo.svg" alt="ATLAS compass symbol"></div>
+      </section>
+      <section aria-labelledby="offerings-title">
+        <h2 id="offerings-title">Club Offerings — This Term's Experiences</h2>
+        <div class="home-offerings">
+          <article class="offering-card">
+            <img src="images/first-story.svg" alt="Open book and ancient stars illustration">
+            <h3>The First Story</h3>
+            <p>Discover the myths and stories that inspired early civilizations.</p>
+            <p class="offering-extra">An introduction to ancient storytelling and shared cultural origins. <strong>Free</strong></p>
+          </article>
+          <article class="offering-card">
+            <img src="images/heros-path.svg" alt="Ancient pathway and rising sun illustration">
+            <h3>The Hero's Path</h3>
+            <p>Explore legendary journeys and the meaning of heroes across cultures.</p>
+            <p class="offering-extra">Compare heroic traditions through discussion and creative activities. <strong>30 SAR</strong></p>
+          </article>
+          <article class="offering-card">
+            <img src="images/desert-stories.svg" alt="Desert dunes under a night sky illustration">
+            <h3>Stories of the Desert</h3>
+            <p>Experience the heritage and traditions carried through desert communities.</p>
+            <p class="offering-extra">Learn how oral history connects generations. <strong>Free</strong></p>
+          </article>
+        </div>
+      </section>
+      <section aria-labelledby="reviews-title">
+        <h2 id="reviews-title">Member Reviews</h2>
+        <div class="home-reviews">
+          <div class="review"><h3>The First Story</h3><p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p><p>“A wonderful way to discover how stories connect different civilizations.”</p></div>
+          <div class="review"><h3>The Hero's Path</h3><p class="review-stars" aria-label="4 out of 5 stars">★★★★☆</p><p>“I loved comparing heroic journeys from different cultures.”</p></div>
+        </div>
+      </section>
+      <section class="passport-section" aria-labelledby="passport-title">
+        <p class="home-eyebrow">YOUR CULTURAL JOURNEY</p>
+        <h2 id="passport-title">Your Atlas Passport</h2>
+        <p>Every experience adds a new chapter. Track your journey across civilizations and see what's next.</p>
+        <div class="passport-stamps" aria-label="Example cultural passport progress">
+          <div class="stamp completed"><span>✓</span><strong>Mesopotamia</strong><small>Completed</small></div>
+          <div class="stamp completed"><span>✓</span><strong>Egypt</strong><small>Completed</small></div>
+          <div class="stamp completed"><span>✓</span><strong>Arabia</strong><small>Completed</small></div>
+          <div class="stamp"><span>○</span><strong>Persia</strong><small>Upcoming</small></div>
+          <div class="stamp"><span>○</span><strong>Islamic Golden Age</strong><small>Upcoming</small></div>
+          <div class="stamp"><span>○</span><strong>Silk Road</strong><small>Upcoming</small></div>
+        </div>
+        <p class="passport-note">Illustrative progress only — interactive tracking is not part of Phase 2.</p>
+      </section>
+    </main>
+    <footer class="site-footer">&copy; ATLAS Club 2026 &nbsp;|&nbsp; Contact: <a href="mailto:hello@atlasclub.org">hello@atlasclub.org</a> &nbsp;|&nbsp; Follow us: @atlasclub<span class="footer-clock" id="clock" aria-live="off"></span></footer>
+  </div>
+  <a class="back-to-top" id="back-to-top" href="#top" aria-label="Back to top" title="Back to top">&uarr;</a>
+  <script src="script.js"></script>
+</body>
+</html>

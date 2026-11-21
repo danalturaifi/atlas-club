@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Activity Evaluation | ATLAS History &amp; Culture Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <img src="images/atlas-logo.svg" alt="ATLAS compass and globe logo">
+      <a class="brand" href="index.html">ATLAS<small>History &amp; Culture Club</small></a>
+    </header>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="manager-dashboard.html">Club Manager Dashboard</a>
+      <a href="member-dashboard.html" aria-current="page">Club Member Dashboard</a>
+      <a href="club-offerings.html">Club Offerings</a>
+      <a href="about-us.html">About Us</a>
+    </nav>
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a> / <a href="member-dashboard.html">Club Member Dashboard</a> / Activity Evaluation
+    </nav>
+    <main>
+      <h1>Activity Evaluation</h1>
+      <p class="lede">Tell us how your completed experience went.</p>
+      <hr class="page-title-rule">
+
+      <h2>Your Evaluation</h2>
+      <form class="atlas-form" id="evaluation-form" action="#" method="post">
+        <div class="field">
+          <label for="completed-offering">Select Completed Activity</label>
+          <select id="completed-offering" name="completed_offering">
+            <option value="">-- Choose an activity --</option>
+            <option value="heros-path">The Hero's Path</option>
+            <option value="fables-of-the-nile">Fables of the Nile</option>
+            <option value="first-story">The First Story</option>
+          </select>
+          <span class="error-msg" id="completed-offering-error"></span>
+        </div>
+
+        <fieldset class="field">
+          <legend>Rating</legend>
+          <div class="stars" id="rating-group">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">&#9733;</label>
+          </div>
+          <span class="error-msg" id="rating-group-error"></span>
+        </fieldset>
+
+        <div class="field">
+          <label for="feedback">Written Feedback</label>
+          <textarea id="feedback" name="feedback" placeholder="What did you enjoy? What could be better?"></textarea>
+          <span class="error-msg" id="feedback-error"></span>
+        </div>
+
+        <input type="button" class="btn" id="submit-button" value="Submit">
+      </form>
+    </main>
+    <footer class="site-footer">&copy; ATLAS Club 2026 &nbsp;|&nbsp; Contact: <a href="mailto:hello@atlasclub.org">hello@atlasclub.org</a> &nbsp;|&nbsp; Follow us: @atlasclub</footer>
+  </div>
+  <script src="js/evaluate-offering.js"></script>
+</body>
+</html>

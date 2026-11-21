@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | ATLAS History &amp; Culture Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <img src="images/atlas-logo.svg" alt="ATLAS compass and globe logo">
+      <a class="brand" href="index.html">ATLAS<small>History &amp; Culture Club</small></a>
+    </header>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="manager-dashboard.html">Club Manager Dashboard</a>
+      <a href="member-dashboard.html">Club Member Dashboard</a>
+      <a href="club-offerings.html">Club Offerings</a>
+      <a href="about-us.html" aria-current="page">About Us</a>
+    </nav>
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a> / About Us
+    </nav>
+    <main>
+      <h1>About Us</h1>
+      <hr class="page-title-rule">
+
+      <section>
+        <h2>Our Mission</h2>
+        <p>Atlas is an experiential history and culture club at King Saud University. Each meeting moves through one civilization with a short story, a hands-on activity, and a conversation that connects it to life today.</p>
+      </section>
+
+      <section>
+        <h2>Our Activity Leaders &amp; Instructors</h2>
+        <div class="leaders">
+          <div class="leader">
+            <img src="images/leader-1.svg" alt="Photo of Dr. Layla Haddad">
+            <a href="profile.html">Dr. Layla Haddad</a>
+            <span>Mesopotamia</span>
+          </div>
+          <div class="leader">
+            <img src="images/leader-2.svg" alt="Photo of Rania Mansour">
+            <a href="profile-2.html">Rania Mansour</a>
+            <span>Ancient Egypt</span>
+          </div>
+          <div class="leader">
+            <img src="images/leader-3.svg" alt="Photo of Khalid Al-Shehri">
+            <a href="profile-3.html">Khalid Al-Shehri</a>
+            <span>Ancient Arabia</span>
+          </div>
+          <div class="leader">
+            <img src="images/leader-4.svg" alt="Photo of Dr. Yasmin Farahani">
+            <a href="profile-4.html">Dr. Yasmin Farahani</a>
+            <span>Persia</span>
+          </div>
+          <div class="leader">
+            <img src="images/leader-5.svg" alt="Photo of Tariq Al-Ghamdi">
+            <a href="profile-5.html">Tariq Al-Ghamdi</a>
+            <span>Islamic Golden Age</span>
+          </div>
+          <div class="leader">
+            <img src="images/leader-6.svg" alt="Photo of Mei Lin Zhao">
+            <a href="profile-6.html">Mei Lin Zhao</a>
+            <span>Silk Road</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Join Our Team</h2>
+        <form class="atlas-form" id="join-form" action="#" method="post" enctype="multipart/form-data">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <span class="error-msg" id="name-error"></span>
+          </div>
+          <div class="field">
+            <label for="photo">Photo</label>
+            <input type="file" id="photo" name="photo">
+            <span class="error-msg" id="photo-error"></span>
+          </div>
+          <div class="field">
+            <label for="dob">Date of birth</label>
+            <input type="date" id="dob" name="dob">
+            <span class="error-msg" id="dob-error"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <span class="error-msg" id="email-error"></span>
+          </div>
+          <div class="field">
+            <label for="expertise">Area of expertise</label>
+            <input type="text" id="expertise" name="expertise">
+            <span class="error-msg" id="expertise-error"></span>
+          </div>
+          <div class="field">
+            <label for="skills">Skills</label>
+            <textarea id="skills" name="skills"></textarea>
+            <span class="error-msg" id="skills-error"></span>
+          </div>
+          <div class="field">
+            <label for="education">Education</label>
+            <textarea id="education" name="education"></textarea>
+            <span class="error-msg" id="education-error"></span>
+          </div>
+          <input type="button" class="btn" id="submit-button" value="Submit">
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">&copy; ATLAS Club 2026 &nbsp;|&nbsp; Contact: <a href="mailto:hello@atlasclub.org">hello@atlasclub.org</a> &nbsp;|&nbsp; Follow us: @atlasclub</footer>
+  </div>
+  <script src="js/about-us.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Club Member Dashboard | ATLAS</title>
+  <link rel="icon" href="images/atlas-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <img src="images/atlas-logo.svg" alt="ATLAS logo: a globe with a compass needle">
+      <a class="brand" href="index.html">ATLAS<small>History &amp; Culture Club</small></a>
+    </header>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="manager-dashboard.html">Club Manager Dashboard</a>
+      <a href="member-dashboard.html" aria-current="page">Club Member Dashboard</a>
+      <a href="club-offerings.html">Club Offerings</a>
+      <a href="about-us.html">About Us</a>
+    </nav>
+    <main>
+      <h1>Club Member Registered Activities</h1>
+      <p class="lede">Every request you have made, and where it stands. These entries are sample content.</p>
+      <hr class="page-title-rule">
+      <table class="data-table">
+        <caption>Your participation requests</caption>
+        <thead>
+          <tr><th scope="col">Offering Name</th><th scope="col">Request Date</th><th scope="col">Cost</th><th scope="col">Status</th></tr>
+        </thead>
+        <tbody id="member-requests-body">
+          <tr><td>The First Story</td><td>12/09/2026</td><td>Free</td><td><span class="status status-pending">Pending</span></td></tr>
+          <tr><td>The Hero's Path</td><td>03/09/2026</td><td>30 SAR</td><td><span class="status status-completed">Completed</span></td></tr>
+          <tr><td>Stories of the Desert</td><td>20/08/2026</td><td>Free</td><td><span class="status status-declined">Declined</span></td></tr>
+        </tbody>
+      </table>
+      <h2>Quick Links</h2>
+      <div class="quick-links">
+        <a href="request-join.html">Request to Join an Activity <span aria-hidden="true">&rarr;</span></a>
+        <a href="evaluate-offering.html">Evaluate a Completed Activity <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </main>
+    <footer class="site-footer">
+      &copy; ATLAS Club 2026 &nbsp;|&nbsp; Contact: <a href="mailto:hello@atlasclub.org">hello@atlasclub.org</a> &nbsp;|&nbsp; Follow us: @atlasclub
+    </footer>
+  </div>
+  <script src="js/member-dashboard.js"></script>
+</body>
+</html>

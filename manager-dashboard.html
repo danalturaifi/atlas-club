@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Club Manager Dashboard | ATLAS History &amp; Culture Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <img src="images/atlas-logo.svg" alt="ATLAS compass and globe logo">
+      <a class="brand" href="index.html">ATLAS<small>History &amp; Culture Club</small></a>
+    </header>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="manager-dashboard.html" aria-current="page">Club Manager Dashboard</a>
+      <a href="member-dashboard.html">Club Member Dashboard</a>
+      <a href="club-offerings.html">Club Offerings</a>
+      <a href="about-us.html">About Us</a>
+    </nav>
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a> / Club Manager Dashboard
+    </nav>
+    <main>
+      <h1>Club Manager Dashboard</h1>
+      <p class="lede">Every experience you manage in one place.</p>
+      <hr class="page-title-rule">
+
+      <section>
+        <h2>Available Activities</h2>
+        <table class="data-table">
+          <caption>All activities that belong to this manager</caption>
+          <thead>
+            <tr>
+              <th>Activity Name</th>
+              <th>Price / Fee</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="manager-table-body">
+            <tr>
+              <td>The First Story</td>
+              <td>0 SAR (Free)</td>
+              <td><span class="status status-published">Published</span></td>
+            </tr>
+            <tr>
+              <td>Fables of the Nile</td>
+              <td>30 SAR</td>
+              <td><span class="status status-published">Published</span></td>
+            </tr>
+            <tr>
+              <td>Stories of the Desert</td>
+              <td>0 SAR (Free)</td>
+              <td><span class="status status-draft">Draft</span></td>
+            </tr>
+            <tr>
+              <td>The Hero's Path</td>
+              <td>30 SAR</td>
+              <td><span class="status status-published">Published</span></td>
+            </tr>
+            <!-- New offerings saved in localStorage are inserted here by JavaScript -->
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Quick Links</h2>
+        <div class="quick-links">
+          <a href="add-offering.html"><span>Add a New Activity</span><span>→</span></a>
+          <a href="manage-leaders.html"><span>Manage Activity Leaders and Instructors</span><span>→</span></a>
+        </div>
+      </section>
+    </main>
+    <script src="js/manager-phase3.js"></script>
+    <footer class="site-footer">&copy; ATLAS Club 2026 &nbsp;|&nbsp; Contact: <a href="mailto:hello@atlasclub.org">hello@atlasclub.org</a> &nbsp;|&nbsp; Follow us: @atlasclub</footer>
+  </div>
+</body>
+</html>
